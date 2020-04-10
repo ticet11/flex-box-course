@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap");
+
+body {
+    margin: 0;
+    font-family: "Inria Sans", sans-serif;
+}
+
+.nav-wrapper {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    background-color: rgb(36, 36, 126);
+    color: white;
+}
+
+.nav-wrapper label {
+    display: none;
+}
+
+.nav-wrapper > #toggle {
+    display: none;
+}
+
+.nav-wrapper > .logo-wrapper {
+    display: flex;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav-wrapper > .logo-wrapper > .logo-image h1 {
+    margin: 0;
+}
+
+.nav-wrapper > .logo-wrapper > .logo-text h1 {
+    margin: 0;
+}
+
+.nav-wrapper > .links-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-link {
+    padding: 20px;
+    background-color: #00004b;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-link a:hover {
+    text-decoration: underline;
+    color: #00004b;
+}
+
+.nav-link:hover {
+    background-color: white;
+    color: #00004b;
+}
+
+.nav-wrapper > .links-wrapper > .nav-links-left {
+    flex: initial;
+    display: flex;
+    flex: auto;
+}
+
+.nav-wrapper > .links-wrapper > .nav-links-right {
+    display: flex;
+    justify-content: flex-end;
+    flex: auto;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .links-wrapper {
+        flex-direction: column;
+    }
+
+    .links-wrapper > .nav-links-left {
+        flex-direction: column;
+    }
+
+    .links-wrapper > .nav-links-right {
+        flex-direction: column;
+    }
+
+    [type="checkbox"]:checked ~ .burgerMenuLinks {
+        display: grid;
+      }
+}
