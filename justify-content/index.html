@@ -18,11 +18,13 @@
             border: solid 10px red;
             display: flex;
             justify-content: center;
+            /* This fixes stretch problem in child flex container */
+            flex-direction: column;
         }
 
         .container > .image-blocks {
             display: flex;
-            flex-direction: column;
+            /* flex-direction: column; */
             justify-content: space-around;
         }
     </style>
