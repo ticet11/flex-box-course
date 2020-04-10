@@ -1,6 +1,7 @@
 # Bottega Flexbox Course
 
 - Videos start [here](https://bottega.devcamp.com/full-stack-development-javascript-python/guide/how-to-align-content-vertically-horizontally-page-flexbox).
+  - You'll have to have been enrolled to use this link.
 
 ## Additional Resources
 
