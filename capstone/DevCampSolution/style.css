@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
+
+body {
+    margin: 0;
+    font-family: "Oxygen", sans-serif;
+}
+
+.navbar {
+    background-color: #415068;
+}
+
+.navbar div {
+    display: none;
+}
+
+.navbar .toggle,
+.navbar .brand {
+    display: inline-block;
+}
+
+.navbar .link {
+    display: block;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    background-color: #223047;
+    color: white;
+}
+
+.navbar .link:hover,
+.navbar .link:active {
+    color: #223047;
+    background-color: white;
+}
+
+.navbar .brand {
+    width: 10em;
+    text-align: center;
+    padding: 1em;
+    color: white;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.navbar .toggle {
+    padding: 1em;
+    color: black;
+}
+
+@media (min-width: 48em) {
+    .navbar {
+        display: flex;
+    }
+
+    .navbar div {
+        display: flex;
+    }
+
+    .navbar .left,
+    .navbar .right {
+        display: flex;
+        flex: 1;
+    }
+
+    .navbar .link {
+        width: auto;
+    }
+
+    .navbar .right {
+        justify-content: flex-end;
+    }
+
+    .navbar .toggle {
+        display: none;
+    }
+}
+
+@media (max-width: 48em) {
+    .navbar.active .toggle {
+        background-color: #223047;
+        color: white;
+    }
+
+    .navbar .brand {
+        text-align: left;
+    }
+
+    .navbar.active div {
+        display: block;
+    }
+}
